@@ -26,6 +26,9 @@ public class TestFxPlot extends Application{
 		FxPlot.getChart("Test").add("YO !!!",20, 10);
 		FxPlot.getChart("Test").add(30, 20);
 		
+		FxPlot.getChart("Test2").add(0, 0);
+		FxPlot.getChart("Test2").add(30, 20);
+		
 	}
 	
 	public static void main(String[] args) {

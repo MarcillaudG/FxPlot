@@ -19,11 +19,19 @@ public class FxPlotChart implements IFxPlotChart {
 	/**
 	 * Default constructor
 	 */
+	
 	public FxPlotChart() {
 		final NumberAxis xAxis = new NumberAxis();
         final NumberAxis yAxis = new NumberAxis();
         lineChart = new LineChart<Number,Number>(xAxis,yAxis);
         lineChart.setTitle("Default");
+	}
+	
+	public FxPlotChart(String name) {
+		final NumberAxis xAxis = new NumberAxis();
+        final NumberAxis yAxis = new NumberAxis();
+        lineChart = new LineChart<Number,Number>(xAxis,yAxis);
+        lineChart.setTitle(name);
 	}
 
 	

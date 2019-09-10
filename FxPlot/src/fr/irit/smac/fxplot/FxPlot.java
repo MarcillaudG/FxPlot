@@ -26,8 +26,9 @@ public class FxPlot {
 	
 	public static IFxPlotChart getChart(String name) {
 		if(!charts.containsKey(name)) {
-			charts.put(name,  new FxPlotChart());
-			FxPlot.updateWindow();
+			charts.put(name,  new FxPlotChart(name));
+			//FxPlot.updateWindow();
+			window.addChart((FxPlotChart)charts.get(name));
 		}
 		
 		return charts.get(name);
